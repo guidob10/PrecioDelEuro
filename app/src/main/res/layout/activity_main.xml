@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- El envoltorio de donde pondre los componentes -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Linear Layout en la pantalla completa -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- agrego recurso toolbar creado por nosotros -->
+        <include android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <!-- En el frameLayout vamos a renderizar lo visible, fragment o lo que quiera -->
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+    <!-- esto puede ser un Listview o un navegationview que es mas potente,
+     es el menu que aparece desde el costado o al clickear -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header_navigation_drawer"
+        app:menu="@menu/nav_options"
+        />
+    <!-- se agrega el headerlayout (header de menu) y el nav_options que son los items del menu -->
+</android.support.v4.widget.DrawerLayout>

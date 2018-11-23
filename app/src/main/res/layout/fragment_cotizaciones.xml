@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#565656"
+    tools:context=".Fragments.CotizacionesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--
+    <TextView
+        android:id="@+id/textViewCot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/cotizaciones" /> -->
+
+    <TextView
+        android:id="@+id/textViewCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="90dp"
+        android:textSize="21dp"
+        android:layout_gravity="right"
+        android:textStyle="bold"
+        android:text="@string/compra" />
+
+    <TextView
+        android:id="@+id/textViewVen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textSize="21dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:text="@string/venta" />
+    
+    <ListView
+        android:id="@+id/listView"
+        android:paddingTop="33dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</FrameLayout>

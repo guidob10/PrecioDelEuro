@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Precio del Euro</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="borrar">Borrar</string>
+
+    <string name="calculadora">Calculadora</string>
+    <string name="compra">Compra</string>
+    <string name="cotizaciones">Cotizaciones</string>
+    <string name="cotizacion">Cotizacion</string>
+    <string name="desccontacto">En esta aplicación encontraran las cotizaciones de distintos tipos de divisa, consumiendo un servicio del sitio dolarhoyinfo.com, allí se verán reflejadas las cotizaciones diarias del valor del euro. La aplicación no se hace responsable de estos valores ni tampoco se pueden realizar compras ni ventas desde esta app.</string>
+    <string name="desccontactofin">Para más información o soporte pueden consultar o escribir un email a betamobilemonkey@gmail.com.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="venta">Venta</string>
+
+
+</resources>

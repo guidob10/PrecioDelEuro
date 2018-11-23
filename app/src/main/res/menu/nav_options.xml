@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- primer tanta de iconos del menu -->
+    <group android:checkableBehavior="single">
+        <!-- busca iconos que muestra, lo busca en la carpeta drawable en res de la libreria de android 28 -->
+        <item
+            android:id="@+id/menu_opcion_1"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/cotizaciones"/>
+
+        <item
+            android:id="@+id/menu_opcion_2"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="@string/calculadora"/>
+
+     </group>
+    <!-- simple texto otras -->
+    <item android:title="Otras">
+        <!-- segunda tanta de iconos del menu -->
+        <menu>
+            <item
+                android:id="@+id/menu_contacto"
+                android:icon="@android:drawable/ic_dialog_email"
+                android:title="Contacto"/>
+        </menu>
+    </item>
+
+</menu>
