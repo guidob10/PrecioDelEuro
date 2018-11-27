@@ -12,6 +12,8 @@ import com.betamobilemonkey.preciodeleuro.Adapters.AdaptadorCotizaciones;
 import com.betamobilemonkey.preciodeleuro.Entidades.Cotizacion;
 import com.betamobilemonkey.preciodeleuro.R;
 import com.betamobilemonkey.preciodeleuro.Servicios.GetCotizacionesWS;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import org.json.JSONObject;
 
@@ -25,6 +27,8 @@ public class CotizacionesFragment extends Fragment {
     private ListView listView;
     private List<Cotizacion> cotizaciones;
     public GetCotizacionesWS mGetCotizaciones;
+    private AdView mBottomBanner;
+
 
 
 
@@ -48,6 +52,16 @@ public class CotizacionesFragment extends Fragment {
         // el segundo parametro es el layout, el tercero el array, en la clase miadaptadorcotizacion de java, va como mostrar los datos.
         AdaptadorCotizaciones miAdaptador = new AdaptadorCotizaciones(this.getContext(), R.layout.list_itemcard_cotizaciones,cotizaciones);
         listView.setAdapter(miAdaptador);
+
+        //Busca banner
+        mBottomBanner = (AdView) view.findViewById(R.id.av_bottom_banner);
+
+        if (mBottomBanner != null) {
+
+            AdRequest adRequest = new AdRequest.Builder().build();
+
+            mBottomBanner.loadAd(adRequest);
+        }
 
         return view;
     }

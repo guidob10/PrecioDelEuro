@@ -8,10 +8,12 @@
     <string name="compra">Compra</string>
     <string name="cotizaciones">Cotizaciones</string>
     <string name="cotizacion">Cotizacion</string>
-    <string name="desccontacto">En esta aplicación encontraran las cotizaciones de distintos tipos de divisa, consumiendo un servicio del sitio dolarhoyinfo.com, allí se verán reflejadas las cotizaciones diarias del valor del euro. La aplicación no se hace responsable de estos valores ni tampoco se pueden realizar compras ni ventas desde esta app.</string>
+    <string name="desccontacto">En esta aplicación encontraran las cotizaciones de distintos tipos de divisa, consumiendo un servicio del sitio <a href="http://www.dolarhoyinfo.com">http://www.dolarhoyinfo.com</a>, allí se verán reflejadas las cotizaciones diarias del valor del euro. La aplicación no se hace responsable de estos valores ni tampoco se pueden realizar compras ni ventas desde esta app.</string>
     <string name="desccontactofin">Para más información o soporte pueden consultar o escribir un email a betamobilemonkey@gmail.com.</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="venta">Venta</string>
-
+    <string name="dolarhoyinfo"><a href="http://www.dolarhoyinfo.com">http://www.dolarhoyinfo.com</a></string>
+    <string name="banner_home_footer">ca-app-pub-5895551430705157/3856916794</string>
+    <string name="interstical">ca-app-pub-5895551430705157/2240582796</string>
 
 </resources>

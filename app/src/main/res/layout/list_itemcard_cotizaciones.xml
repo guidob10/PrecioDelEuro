@@ -33,9 +33,7 @@
                 android:layout_width="45dp"
                 android:layout_height="30dp"
                 android:scaleType="fitXY"
-
                 />
-
 
             <TextView
                 android:id="@+id/lblListItem"
@@ -63,10 +61,10 @@
                 android:id="@+id/precioCompra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/precioVenta"
                 android:textSize="25sp"
                 android:layout_marginTop="5dp"
-                android:layout_marginRight="55dp"
+                android:layout_alignParentRight="true"
+                android:paddingRight="100dp"
                 android:textColor="#000000"/>
 
             <TextView
@@ -78,8 +76,6 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="15dp"
                 android:textColor="#000000"/>
-
-
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>

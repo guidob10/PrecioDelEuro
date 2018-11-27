@@ -36,7 +36,7 @@
                 android:textSize="30dp"
                 android:padding="15dp"
                 android:textColor="#0fff4d"
-                android:background="#000000"
+                android:background="#636363"
                 android:layout_width="275dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"

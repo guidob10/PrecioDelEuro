@@ -18,10 +18,13 @@
     <item android:title="Otras">
         <!-- segunda tanta de iconos del menu -->
         <menu>
-            <item
-                android:id="@+id/menu_contacto"
-                android:icon="@android:drawable/ic_dialog_email"
-                android:title="Contacto"/>
+            <!-- este comando chequea/deschequea punto de menu -->
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_contacto"
+                    android:icon="@android:drawable/ic_dialog_email"
+                    android:title="Contacto"/>
+            </group>
         </menu>
     </item>
 

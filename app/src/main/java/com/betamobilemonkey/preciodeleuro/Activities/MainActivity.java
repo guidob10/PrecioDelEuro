@@ -37,7 +37,9 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.navview);
 
-        setFragmentByDefault();
+        MenuItem item = navigationView.getMenu().getItem(0);
+        setFragment(item, new CotizacionesFragment());
+        // setFragmentByDefault();
 
         // Creo Evento para capturar cuando se abre menu o se cierra
         drawerLayout.addDrawerListener(new DrawerLayout.DrawerListener() {
@@ -83,14 +85,15 @@ public class MainActivity extends AppCompatActivity {
 
                 // Si tiene item seleccionado
                 if (fragmentTransaction){
-
-                    setFragmentByDefault();
+                    //navigationView.setche
+                    setFragment(menuItem, fragment);
+                    // setFragmentByDefault();
                     //Trae manejador de Fragments e inicia transaccion y pasa fragmento a fragment del activitymain xml
-                    getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();
+                    //getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();
                     //Esto se hace para que se vea activo el item seleccionado (con gris)
-                    menuItem.setChecked(true);
+                    //menuItem.setChecked(true);
                     //A la barra le paso el nombre del item
-                    getSupportActionBar().setTitle(menuItem.getTitle());
+                    //getSupportActionBar().setTitle(menuItem.getTitle());
                     //Cierra menu lateral
                     drawerLayout.closeDrawers();
                 }
@@ -109,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_home);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-
+/*
     // Fragmento que aparece por default al iniciar app
     private void setFragmentByDefault(){
         getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new CotizacionesFragment()).commit();
@@ -117,6 +120,17 @@ public class MainActivity extends AppCompatActivity {
         MenuItem item = navigationView.getMenu().getItem(0);
         // Dejo item chequeado para cuando abra el menu
         item.setChecked(true);
+        getSupportActionBar().setTitle(item.getTitle());
+    }
+*/
+
+    private void setFragment(MenuItem item, Fragment fragment){
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();
+
+      //  MenuItem item = navigationView.getMenu().getItem(0);
+        // Dejo item chequeado para cuando abra el menu
+        item.setChecked(true);
+
         getSupportActionBar().setTitle(item.getTitle());
     }
 
