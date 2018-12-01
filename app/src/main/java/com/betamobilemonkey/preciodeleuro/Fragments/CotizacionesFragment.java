@@ -180,8 +180,6 @@ public class CotizacionesFragment extends Fragment {
             i++;
         }
 
-        //adaptador es la forma en que mostraremos los datos, se usa adaptador porque se agregan no solo un simple texto, una clase con moneda, imagen, valor, etc.
-        // el segundo parametro es el layout, el tercero el array, en la clase miadaptadorcotizacion de java, va como mostrar los datos.
         AdaptadorCotizaciones miAdaptador = new AdaptadorCotizaciones(this.getContext(), R.layout.list_itemcard_cotizaciones,cotizaciones);
         listView.setAdapter(miAdaptador);
 
@@ -193,19 +191,11 @@ public class CotizacionesFragment extends Fragment {
         DecimalFormat df = new DecimalFormat("0.00");
         df.setMaximumFractionDigits(2);
         df.format(valorFloat);
+        //Multiplica 2% simulando precio venta
         BigDecimal numeroMultiplicador = BigDecimal.valueOf(1.02);
-        //  numero = numero*.(json);
         BigDecimal resul = BigDecimal.valueOf(valorFloat);
 
         resul = resul.multiply(numeroMultiplicador);
-
-        df.setMaximumFractionDigits(2);
-        String result = df.format(resul);
-        // double res = Math.floor(numero * 1.014);
-        String cadena = "";
-        cadena = String.valueOf(result);
-        //TextView divisaVenta = (TextView) findViewById(R.id.precioVenta);
-        //divisaVenta.setText(cadena);
 
         return resul;
     }

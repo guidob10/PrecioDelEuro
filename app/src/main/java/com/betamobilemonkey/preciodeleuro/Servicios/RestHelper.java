@@ -35,7 +35,6 @@ public class RestHelper {
         //TODO: pasar a https
         HttpURLConnection connection = null;
 
-        // DebugLogConfig.enable();
         try {
 
             URL urlEntity = new URL(url);
@@ -51,8 +50,6 @@ public class RestHelper {
             connection.setDoOutput(true);
 
             connection.setRequestProperty(contentType, jsonType);
-            //connection.setRequestProperty("Content-Length", Integer.toString(objJson.length()));
-
 
             connection.connect();
 
@@ -98,8 +95,6 @@ public class RestHelper {
         HttpURLConnection connection = null;
 
         try {
-            //     URL urlEntity = new URL(uriWithParameters);
-            //    connection = (HttpURLConnection) uriWithParameters.openConnection();
 
             connection = (HttpURLConnection)url.openConnection();
 

@@ -57,7 +57,6 @@ public class AdaptadorCotizaciones extends BaseAdapter {
         //traemos el dato en la posicion que pida
         Cotizacion cotizacion = cotizaciones.get(position);
 
-      //  String currentName = cotizaciones.get(position);
         img = (ImageView) vistaCotizacion.findViewById(R.id.imagenBandera);
         img.setImageResource(cotizaciones.get(position).getImagen());
 

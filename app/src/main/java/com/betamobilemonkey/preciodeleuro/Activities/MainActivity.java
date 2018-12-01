@@ -10,16 +10,11 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.BaseAdapter;
-
-import com.betamobilemonkey.preciodeleuro.Entidades.Cotizacion;
 import com.betamobilemonkey.preciodeleuro.Fragments.CalculadoraFragment;
 import com.betamobilemonkey.preciodeleuro.Fragments.ContactoFragment;
 import com.betamobilemonkey.preciodeleuro.Fragments.CotizacionesFragment;
 import com.betamobilemonkey.preciodeleuro.R;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -86,15 +81,8 @@ public class MainActivity extends AppCompatActivity {
 
                 // Si tiene item seleccionado
                 if (fragmentTransaction){
-                    //navigationView.setche
                     setFragment(menuItem, fragment);
-                    // setFragmentByDefault();
-                    //Trae manejador de Fragments e inicia transaccion y pasa fragmento a fragment del activitymain xml
-                    //getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();
-                    //Esto se hace para que se vea activo el item seleccionado (con gris)
-                    //menuItem.setChecked(true);
-                    //A la barra le paso el nombre del item
-                    //getSupportActionBar().setTitle(menuItem.getTitle());
+
                     //Cierra menu lateral
                     drawerLayout.closeDrawers();
                 }
@@ -113,25 +101,13 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_home);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-/*
-    // Fragmento que aparece por default al iniciar app
-    private void setFragmentByDefault(){
-        getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, new CotizacionesFragment()).commit();
-
-        MenuItem item = navigationView.getMenu().getItem(0);
-        // Dejo item chequeado para cuando abra el menu
-        item.setChecked(true);
-        getSupportActionBar().setTitle(item.getTitle());
-    }
-*/
 
     private void setFragment(MenuItem item, Fragment fragment){
+        //Trae manejador dsetFragmentByDefaulte Fragments e inicia transaccion y pasa fragmento a fragment del activitymain xml
         getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();
-
-      //  MenuItem item = navigationView.getMenu().getItem(0);
-        // Dejo item chequeado para cuando abra el menu
+        //Esto se hace para que se vea activo el item seleccionado (con gris) cuando abra el menu
         item.setChecked(true);
-
+        //A la barra le paso el nombre del item
         getSupportActionBar().setTitle(item.getTitle());
     }
 
