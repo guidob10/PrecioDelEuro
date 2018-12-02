@@ -92,9 +92,9 @@ public class Cotizacion {
                 return R.drawable.peru;
 
             case "Otros":
-                return R.drawable.sa; //poner europa
+                return R.drawable.eu; //poner europa
         }
-        return R.drawable.sa;
+        return R.drawable.eu;
     }
 
 

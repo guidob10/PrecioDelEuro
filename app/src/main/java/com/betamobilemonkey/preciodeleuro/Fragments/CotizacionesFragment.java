@@ -30,8 +30,6 @@ public class CotizacionesFragment extends Fragment {
     private AdView mBottomBanner;
 
 
-
-
     public CotizacionesFragment() {
         // Required empty public constructor
 
@@ -87,6 +85,7 @@ public class CotizacionesFragment extends Fragment {
         cotizaciones.add(new Cotizacion(9,"Colombia","COP",new BigDecimal(0.0),new BigDecimal(0.0)));
         cotizaciones.add(new Cotizacion(10,"Peru","PEN",new BigDecimal(0.0),new BigDecimal(0.0)));
         cotizaciones.add(new Cotizacion(11,"China","CNY",new BigDecimal(0.0),new BigDecimal(0.0)));
+        cotizaciones.add(new Cotizacion(12,"","EUR",new BigDecimal(1.0),new BigDecimal(1.0)));
         this.RefreshDataSource();
     }
 
