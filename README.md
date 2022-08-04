@@ -1,12 +1,20 @@
-# PrecioDelEuro
-App Android para conocer el precio del euro frente a otras divisas
+### PrecioDelEuro ###
+ 
+_App Android para conocer el precio del euro frente a otras divisas_
+ 
+_Link de descarga: https://play.google.com/store/apps/details?id=com.betamobilemonkey.preciodeleuro_
 
-Este sitio esta obtiene los datos desde https://dolarhoyinfo.com
+### Funciones ###
 
-Link de descarga: https://play.google.com/store/apps/details?id=com.betamobilemonkey.preciodeleuro
+* Obtener cotizacion del dolar.
+* Calculo entre divisas
 
+### Requerimientos ###
 
+* API de dolar para consumir.
+* Este sitio esta obtiene los datos desde https://dolarhoyinfo.com
+  
+### Documentacion ###  
 
-![alt text](http://dolarhoyinfo.com/pics/www.png)
-![alt text](http://dolarhoyinfo.com/pics/qqq.png)
-![alt text](http://dolarhoyinfo.com/pics/xxx.png)
+* Ver documento Documentacion Precio del Euro.docx
+
